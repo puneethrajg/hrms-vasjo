@@ -15,15 +15,18 @@ public class TaskRequestDTO {
 	
 	private String status;
 	
+	private Long projectId;
+	
 	public TaskRequestDTO() {
 		
 	}
 
-	public TaskRequestDTO(String name, String description, String status) {
+	public TaskRequestDTO(String name, String description, String status, Long projectId) {
 		
 		this.name = name;
 		this.description = description;
 		this.status = status;
+		this.projectId = projectId;
 	}
 	
 	
