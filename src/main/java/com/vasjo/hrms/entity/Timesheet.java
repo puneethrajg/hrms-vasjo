@@ -31,17 +31,20 @@ public class Timesheet {
 	
 	private Double overtimeHours;
 	
+	private String rejectionReason;
+	
 	public Timesheet() {
 		
 	}
 
-	public Timesheet(Long id, User user, LocalDate weekStart, String status, Double totalHours, Double overtimeHours) {
+	public Timesheet(Long id, User user, LocalDate weekStart, String status, Double totalHours, Double overtimeHours,String rejectionReason) {
 		this.id = id;
 		this.user = user;
 		this.weekStart = weekStart;
 		this.status = status;
 		this.totalHours = totalHours;
 		this.overtimeHours = overtimeHours;
+		this.rejectionReason = rejectionReason;
 	}
 	
 	

@@ -1,25 +1,14 @@
 package com.vasjo.hrms.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class ErrorResponseDTO {
 	
 	private String error;
 	private String code;
-	
-	public String getError() {
-		return error;
-	}
-
-	public void setError(String error) {
-		this.error = error;
-	}
-
-	public String getCode() {
-		return code;
-	}
-
-	public void setCode(String code) {
-		this.code = code;
-	}
 
 	public ErrorResponseDTO() {
 		
